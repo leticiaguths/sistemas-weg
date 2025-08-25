@@ -6,7 +6,7 @@ public class SensorTemperatura extends Sensor {
         super();
     }
 
-    public SensorTemperatura (String codigo, String nomeEquipamento, String tipo) {
-        super(codigo, nomeEquipamento, tipo);
+    public SensorTemperatura (String codigo, String nomeEquipamento, String tipo, int alerta) {
+        super(codigo, nomeEquipamento, tipo, alerta);
     }
 }

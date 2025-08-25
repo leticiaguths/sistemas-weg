@@ -6,7 +6,7 @@ public class SensorVibracao extends Sensor {
         super();
     }
 
-    public SensorVibracao (String codigo, String nomeEquipamento, String tipo) {
-        super(codigo, nomeEquipamento, tipo);
+    public SensorVibracao (String codigo, String nomeEquipamento, String tipo, int alerta) {
+        super(codigo, nomeEquipamento, tipo, alerta);
     }
 }
