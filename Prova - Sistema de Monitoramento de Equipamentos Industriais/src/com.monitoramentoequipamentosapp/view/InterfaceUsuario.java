@@ -101,6 +101,34 @@ public class InterfaceUsuario {
         System.out.println("\u001B[33m⚠\uFE0F ALERTA: Medição fora do limite técnico! (" + valor + " ≠ 60.0)\u001B[0m");
     }
 
+    public void nenhumSensorCritico() {
+        System.out.println("\n\u001b[32m✅ Nenhum sensor crítico encontrado.\u001b[0m");
+    }
+
+    public void atencaoInspecao() {
+        System.out.println("\n\u001B[31m⚠️ ATENÇÃO: Inspeção imediata recomendada!\u001B[0m");
+    }
+
+    public void exibirSensorCritico(Sensor sensor) {
+        System.out.println("Código: " + sensor.getCodigo() + " | Tipo: " + sensor.getTipo() + " | Equipamento: " + sensor.getNomeEquipamento() + " | Alertas: " + sensor.getAlerta());
+    }
+
+    public void sensoresCriticos() {
+        System.out.println("\n================= Sensores Críticos (> 3 alertas) =================");
+    }
+
+    public void verificandoSensores() {
+        System.out.println("\n=================== Verificando Sensores ===================");
+    }
+
+    public void alertasDetectados(int totalAlertas) {
+        System.out.println("\u001B[31m⚠️ " + totalAlertas + " alerta(s) detectado(s)\u001B[0m");
+    }
+
+    public void nenhumAlerta() {
+        System.out.println("\u001b[32m✅ Nenhum alerta\u001B[0m");
+    }
+
     public void divisor() {
         System.out.println("\n----------------------------------------------------------");
     }
@@ -112,7 +140,5 @@ public class InterfaceUsuario {
     public void mensagemPadrao() {
         System.out.println("\nNúmero inválido. Tente novamente.");
     }
-
-
 
 }

@@ -123,11 +123,60 @@ public class SensorService {
 
             //VERIFICAR ALERTAS
             case 5 -> {
+                tela.verificandoSensores();
+                System.out.println();
 
+                if (listaSensores.isEmpty()) {
+                    tela.semSensor();
+                    return;
+                }
+
+                for (Sensor sensor : listaSensores) {
+                    String tipoSensor = sensor.getTipo();
+                    String nomeEquipamento = sensor.getNomeEquipamento();
+                    String codigo = sensor.getCodigo();
+                    int totalAlertas = sensor.getAlerta();
+
+                    System.out.println("\nSensor " + codigo + " (" + tipoSensor + ") – " + nomeEquipamento + ":");
+
+                    if (totalAlertas > 0) {
+                        tela.alertasDetectados(totalAlertas);
+                    } else {
+                        tela.nenhumAlerta();
+                    }
+
+                }
+
+                System.out.println();
+                tela.divisor();
+                System.out.println();
             }
 
+            //LISTAR SENSORES CRÍTICOS
             case 6 -> {
+                tela.sensoresCriticos();
+                System.out.println();
 
+                List<Sensor> sensoresCriticos = new ArrayList<>();
+                for (Sensor sensor : listaSensores) {
+                    if (sensor.getAlerta() > 3) {
+                        sensoresCriticos.add(sensor);
+                    }
+                }
+
+                if (sensoresCriticos.isEmpty()) {
+                    tela.nenhumSensorCritico();
+                } else {
+                    for (Sensor sensor : sensoresCriticos) {
+                        tela.exibirSensorCritico(sensor);
+                    }
+                    System.out.println();
+                    tela.atencaoInspecao();
+                }
+
+                System.out.println();
+                tela.divisor();
+                System.out.println();
             }
 
             case 0 -> {
