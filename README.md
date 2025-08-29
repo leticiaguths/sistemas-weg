@@ -109,7 +109,7 @@ Sistema ERP para gestão inteligente de estoque de equipamentos de manutenção 
 
 **Versão 2.0 - Melhorias:**
 - ✅ Relatórios executivos de estoque
-- ✅ Busca avançada por nome (fuzzy search)
+- ✅ Busca avançada por nome 
 - ✅ Filtros por faixa de preço
 - ✅ Analytics de estoque baixo
 - ✅ Dashboard de métricas
@@ -312,19 +312,10 @@ Ambos os sistemas possuem interfaces intuitivas via terminal com:
 
 ## 📈 Performance
 
-- ⚡ Algoritmos otimizados para busca (O(n))
+- ⚡ Algoritmos otimizados para busca
 - 💾 Uso eficiente de memória
 - 🚀 Interface responsiva no terminal
 - 📊 Processamento em tempo real
-
-## 🚀 Próximas Implementações
-
-- [ ] Integração com banco de dados
-- [ ] API REST para integração
-- [ ] Interface web responsiva
-- [ ] Sistema de notificações
-- [ ] Logs auditáveis
-- [ ] Dashboard analytics avançado
 
 ## 👨‍💻 Autor
 
@@ -341,10 +332,3 @@ Desenvolvido por **Letícia Emanuele Güths** como parte dos estudos avançados 
 </div>
 
 ---
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](seu-linkedin)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=for-the-badge&logo=github)](seu-github)
-
-</div>
